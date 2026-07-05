@@ -128,5 +128,6 @@ capitalizarNombre("JUAN PÉREZ");      // "Juan Pérez"
 
 ## Video de prueba
 
-https://raw.githubusercontent.com/YHUDIEL/utileria-js/main/img/video.mp4
+se llama video.mp4 y esta en la sig ruta:
+https://raw.githubusercontent.com/YHUDIEL/utileria-js/main/img
 
