@@ -128,5 +128,5 @@ capitalizarNombre("JUAN PÉREZ");      // "Juan Pérez"
 
 ## Video de prueba
 
-<video src="img/video.mp4" controls width="100%">
+<video src="https://raw.githubusercontent.com/YHUDIEL/utileria-js/main/img/video.mp4" controls width="100%">
 </video>
