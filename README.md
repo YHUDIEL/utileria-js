@@ -128,4 +128,4 @@ capitalizarNombre("JUAN PÉREZ");      // "Juan Pérez"
 
 ## Video de prueba
 
-![video de prueba](img/video.mkv)
+![video de prueba](img/video.mp4)
