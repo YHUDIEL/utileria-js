@@ -126,3 +126,6 @@ capitalizarNombre("JUAN PÉREZ");      // "Juan Pérez"
 
 ![Login exitoso](img/login-exitoso.png)
 
+## Video de prueba
+
+![video de prueba](img/video.mkv)
