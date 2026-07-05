@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #50ced7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    background: rgb(92, 219, 124);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 450px;
+    width: 100%;
+    margin: 20px;
+}
+
+h1 {
+    color: #ff2200;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+p.subtitulo {
+    color: #5b6465;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dde2e8;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 4px;
+    background: white;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52,152,219,0.2);
+}
+
+input[readonly] {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+input.invalido {
+    border-color: #e74c3c;
+}
+
+.campo {
+    margin-bottom: 16px;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 2px;
+    display: none;
+}
+
+.error.visible {
+    display: block;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-overlay.activo {
+    display: flex;
+}
+
+.modal {
+    background: rgb(92, 219, 124);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    max-width: 340px;
+    width: 90%;
+    text-align: center;
+}
+
+.modal h2 {
+    color: #ff2200;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.modal .edad-numero {
+    font-size: 64px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 16px 0 4px;
+}
+
+.modal .edad-label {
+    color: #5b6465;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.modal .nombre-bienvenida {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-size: 15px;
+}

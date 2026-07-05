@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilería JS - Formulario de Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario de Registro</h1>
+        <p class="subtitulo">Completa todos los campos para continuar.</p>
+
+        <form onsubmit="enviarFormulario(); return false;">
+            <div class="campo">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Ej: Yhudiel Mendoza">
+                <span class="error" id="errNombre">Solo se permiten letras.</span>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo Electrónico</label>
+                <input type="text" id="correo" placeholder="Ej: yhudiel@gmail.com">
+                <span class="error" id="errCorreo">Formato de correo inválido.</span>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono (10 dígitos)</label>
+                <input type="text" id="telefono" placeholder="Ej: 9511113265" maxlength="10">
+                <span class="error" id="errTelefono">Ingresa exactamente 10 dígitos.</span>
+                <input type="text" id="region" readonly placeholder="Región detectada automáticamente">
+            </div>
+
+            <div class="campo">
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" id="fecha">
+                <span class="error" id="errFecha">Debes ser mayor de 18 años.</span>
+            </div>
+
+            <div class="campo">
+                <label for="codigo">Código Postal (máx. 5 dígitos)</label>
+                <input type="text" id="codigo" placeholder="Ej: 22000" maxlength="5">
+                <span class="error" id="errCodigo">El código postal debe tener máximo 5 dígitos.</span>
+            </div>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <p class="subtitulo" style="margin-top:16px; text-align:center;">
+            ¿Ya tienes cuenta? <a href="login.html" style="color:#2c3e50; font-weight:600;">Inicia sesión</a>
+        </p>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h2>Registro Exitoso</h2>
+            <div class="edad-numero" id="edadMostrar">--</div>
+            <p class="edad-label">años de edad</p>
+            <p class="nombre-bienvenida" id="nombreMostrar"></p>
+            <button onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="js/utileria.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
