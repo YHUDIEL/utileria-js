@@ -3,17 +3,6 @@
 **Yhudiel Mendoza Sanchez**  
 Programación Web — Tarea 2
 
-Librería JavaScript creada sin frameworks ni librerías externas para validar y formatear datos en formularios web. Resuelve el problema de repetir la misma lógica de validación en cada página, juntándola en un solo archivo reutilizable.
-
----
-
-## ¿Cómo usarla?
-
-Solo incluye el script antes de cerrar el `<body>`:
-
-```html
-<script src="js/utileria.js"></script>
-```
 
 ---
 
@@ -78,7 +67,7 @@ validarPassword("password"); // false
 
 ---
 
-### `formatearTelefono(telefono)` ⭐ función propia
+### `formatearTelefono(telefono)`
 Toma un número de 10 dígitos y lo devuelve en formato `XXX-XXX-XXXX`. Útil para mostrar teléfonos de forma legible.
 
 ```js
@@ -89,7 +78,7 @@ formatearTelefono("123");           // ""
 
 ---
 
-### `obtenerRegionOaxaca(lada)` ⭐ función propia
+### `obtenerRegionOaxaca(lada)`
 Identifica la región del estado de Oaxaca a partir de los primeros 3 dígitos del número de teléfono (lada). Útil para saber de qué parte del estado es un contacto.
 
 ```js
